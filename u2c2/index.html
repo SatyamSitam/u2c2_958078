@@ -16,13 +16,14 @@
       }
       #banner{
         display: flex;
-        height: 250px;
-        background-color: #262f82;
         color: white;
         border-radius: 25px;
+        background-color: #262f82;
       }
       #banner > div{
         width: 50%;
+        border-radius: 25px;
+        background-color: #262f82;
         padding: 0px 50px 0px 40px;
         line-height: 30px;
         flex-direction: column;
@@ -86,13 +87,14 @@
         text-align: left;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
         padding-bottom: 20px;
-        
+
       }
       
       /* Medium Screen */
       @media only screen and (min-width: 500px) and (max-width: 768px) {
         #banner{
        flex-direction: column;
+       text-align: center;
       }
       #services{
         grid-template-columns: repeat(3,1fr); 
@@ -105,6 +107,7 @@
       @media only screen and (min-width: 320px) and (max-width: 499px) {
         #banner{
        flex-direction: column;
+       text-align: center;
       }
       #services{
         grid-template-columns: repeat(2,1fr);
